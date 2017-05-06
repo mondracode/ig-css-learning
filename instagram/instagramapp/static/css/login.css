@@ -1,0 +1,16 @@
+#tarjeta
+{
+  float: right;
+  margin-top: 15%;
+  margin-right: 20%;
+
+}
+#logo
+{
+  border-radius: 15px;
+  float: left;
+  margin-left: 15%;
+  margin-top: 15%;
+  width: 50%;
+  height: 50%;
+}

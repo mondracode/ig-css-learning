@@ -1,0 +1,21 @@
+#logo
+{
+  border-radius: 15px;
+  float: left;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+#tarjeta
+{
+  float: right;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+/*
+#titulo
+{
+  text-align: center;
+  margin-top: 5%;
+  font-size: 130px;
+}
+*/

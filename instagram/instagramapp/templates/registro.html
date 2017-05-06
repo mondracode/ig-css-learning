@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido</title>
+
+<!--Invoca a CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/registro.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+<!--  <div id="titulo">
+    Bienvenido.
+  </div>-->
+<!--tarjeta de Formulario-->
+  <div class="card" id="tarjeta" style="width: 20rem;">
+    <div class="card-block">
+      <!--Formulario de registro-->
+      <form>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Correo">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Nombre completo">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Usuario">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Contraseña">
+            </div>
+          <a class="btn btn-primary" href="/home">Regístrate</a>
+          <br><br>
+
+          <font face="arial">
+          Ya tienes una cuenta?
+          <a href="/login">Entrar</a>
+
+      </form>
+      <!--termina el formulario-->
+    </div>
+<!--termina la tarjeta-->
+  </div>
+
+<!--Logo-->
+  <div id="login" class="form-group">
+        <img src="imágenes/logo0.png" id="logo">
+
+  </div>
+<!--Termina el logo-->
+
+</body>
+</html>
