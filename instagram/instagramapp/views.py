@@ -7,4 +7,4 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home2.html')
