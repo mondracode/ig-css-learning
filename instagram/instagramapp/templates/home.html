@@ -4,50 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Orion</title>
-
-<!--Invoca a CSS-->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Invoca a CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+<!--Barra de navegación-->
+<nav style="background-color: #e6e9ef;">
 
-<!--barra de navegación-->
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-faded" style="background-color: #424242;" id="barra">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <a class="navbar-brand" id="milogo" href="#">
-        <!--<img src="https://k60.kn3.net/3/7/1/6/8/5/4D8.png" width="50" height="50">Orion</a>-->
-        <!--<img src="https://k61.kn3.net/B/4/1/1/8/7/288.png" width="100" height="50"></a>-->
-        <div id="milogo">
-           <img src="https://k61.kn3.net/E/7/8/6/4/C/6DB.png" width="200" height="66"></a>
-         </div>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <i class="material-icons">home</i> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Buscar <i class="material-icons">search</i> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Subir <i class="material-icons">add_a_photo</i></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Cuenta
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Perfil</a>
-          <a class="dropdown-item" href="#">Ajustes</a>
-          <a class="dropdown-item" href="/">Cerrar sesión</a>
+ <ul class="nav nav-fill">
+   <li class="nav-item">
+     <a href="/home/">
+       <div id="milogo">
+          <img border="0" alt="Orion" src="https://k61.kn3.net/B/4/1/1/8/7/288.png" width="150" height="75">
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--termina la barra-->
+     </a>
+
+   </li>
+
+    <li class="nav-item">
+      <a id="botonactivo" style="background-color:#1976d2; color: white;"class="nav-link active" href="#">Home<center><i class="material-icons">home</i></center><span class="sr-only">(current)</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Subir<center><i class="material-icons">add_a_photo</i></center></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Buscar<center><i class="material-icons">search</i></center></a>
+    </li>
+    <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mi cuenta
+        </a>
+        <div id="funcionapls" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/perfil/">Perfil</a>
+          <a class="dropdown-item" href="#">Amigos</a>
+          <a class="dropdown-item" href="#">Opciones</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/">Cerrar sesion</a>
+        </div>
+    </li>-->
+    <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi Orion</a>
+                  <div class="dropdown-menu w-100 text-center" id="dropbarra">
+                    <a class="dropdown-item" href="/perfil/">Perfil</a>
+                    <a class="dropdown-item" href="#">Amigos</a>
+                    <a class="dropdown-item" href="#">Opciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/">Cerrar sesión</a>
+                  </div>
+  </nav>
+</ul>
+<!--termina la barra de navegación-->

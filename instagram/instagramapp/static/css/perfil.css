@@ -1,9 +1,8 @@
 .nav-link{
   color: black;
+  margin-right: 10%;
 }
-.card
+#dropbarra
 {
-  margin-top: 2%;
-  margin-left: 9%;
-  width: 82%;
+  margin-right: 2%;
 }

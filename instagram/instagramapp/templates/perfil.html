@@ -16,17 +16,18 @@
 <!--Barra de navegación-->
 <nav style="background-color: #e6e9ef;">
 
- <ul class="nav nav-justified">
+ <ul class="nav nav-fill">
    <li class="nav-item">
      <a href="/home/">
        <div id="milogo">
           <img border="0" alt="Orion" src="https://k61.kn3.net/B/4/1/1/8/7/288.png" width="150" height="75">
         </div>
      </a>
+
    </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="/home/">Home<center><i class="material-icons">home</i></center><span class="sr-only">(current)</span></a>
+    <li class="nav-item active">
+      <a id="botonactivo" class="nav-link active" href="#">Home<center><i class="material-icons">home</i></center><span class="sr-only">(current)</span></a>
     </li>
 
     <li class="nav-item">
@@ -36,25 +37,27 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Buscar<center><i class="material-icons">search</i></center></a>
     </li>
-    <li class="nav-item dropdown">
+    <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Mi cuenta
         </a>
         <div id="funcionapls" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Perfil</a>
+          <a class="dropdown-item" href="/perfil/">Perfil</a>
           <a class="dropdown-item" href="#">Amigos</a>
           <a class="dropdown-item" href="#">Opciones</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/">Cerrar sesion</a>
         </div>
-    </li>
+    </li>-->
+    <li class="nav-item dropdown" id="barranav">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi Orion</a>
+                  <div class="dropdown-menu w-100 text-center" id="dropbarra">
+                    <a class="dropdown-item" href="/perfil/">Perfil</a>
+                    <a class="dropdown-item" href="#">Amigos</a>
+                    <a class="dropdown-item" href="#">Opciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/">Cerrar sesión</a>
+                  </div>
   </nav>
 </ul>
 <!--termina la barra de navegación-->
-
-<div class="card">
-
-  <div class="card-block">
-    <h4 class="card-title">Test xd</h4>
-  </div>
-</div>

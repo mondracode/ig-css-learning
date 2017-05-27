@@ -1,8 +1,8 @@
 #tarjeta
 {
   float: right;
-  margin-top: 15%;
-  margin-right: 20%;
+  margin-top: 20%;
+  margin-right: 10%;
 
 }
 #logo
@@ -11,6 +11,5 @@
   float: left;
   margin-left: 15%;
   margin-top: 15%;
-  width: 50%;
-  height: 50%;
+
 }

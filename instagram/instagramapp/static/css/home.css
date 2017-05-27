@@ -1,0 +1,18 @@
+.nav-link{
+  color: black;
+}
+
+button.btn.btn-primary.dropdown-toggle {
+    width: 100%;
+}
+.btn-group {
+    display: block;
+}
+.nav-link dropdown-toggle{
+
+  margin-right: 10%;
+}
+#barranav
+{
+  margin-right: 2%;
+}
