@@ -8,7 +8,7 @@ button.btn.btn-primary.dropdown-toggle {
 .btn-group {
     display: block;
 }
-.dropdown-toggle{
+.nav-link dropdown-toggle{
 
   margin-right: 10%;
 }
@@ -16,9 +16,9 @@ button.btn.btn-primary.dropdown-toggle {
 {
   margin-right: 2%;
 }
-#tarjeta
+#descrip
 {
-  margin-top: 20px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50%;
+  float: right;
+  width: 20%;
 }
