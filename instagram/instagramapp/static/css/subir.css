@@ -22,3 +22,14 @@ button.btn.btn-primary.dropdown-toggle {
   float: right;
   width: 20%;
 }
+.dropdown-toggle{
+
+  margin-right: 10%;
+}
+
+#tarjeta
+{
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}

@@ -7,8 +7,8 @@ class MiUsuario( models.Model ):
     foto = models.CharField( max_length = 600, null = True )
 
 class Follow( models.Model ):
-    followers = models.ForeignKey( MiUsuario, related_name='%(class)s_followers' )
-    following = models.ForeignKey ( MiUsuario, related_name='%(class)s_following' )
+    followers = models.ForeignKey( MiUsuario, related_name='%(class)s_username_sigue' )
+    following = models.ForeignKey ( MiUsuario, related_name='%(class)s_username_sigo' )
 
 class Post( models.Model ):
     foto = models.CharField( max_length = 600 )

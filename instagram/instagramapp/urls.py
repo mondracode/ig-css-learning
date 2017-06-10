@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^perfil/$', views.perfil, name = 'perfil'),
     url(r'^buscar/$', views.buscar, name = 'buscar'),
     url(r'^subir/$', views.subir, name = 'subir'),
+    url(r'^uploadFile/$', views.uploadFile, name = 'uploadFile'),
 ]

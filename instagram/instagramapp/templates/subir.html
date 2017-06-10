@@ -62,28 +62,34 @@
 <!--termina la barra de navegación-->
 </head>
 <body>
-<div class="card text-center" style="margin-left:9%; margin-right:9%; margin-top:2%;">
+<div class="card text-center" style=" margin-left:9%; margin-right:9%; margin-top:2%;">
   <div class="card-block">
     <h1>
         Sube
         <small class="text-muted">una foto</small> <br> <br>
     </h1>
+    <form action='{% url 'uploadFile' %}' method='POST' enctype="multipart/form-data">
+      {% csrf_token %}
     <!--Selección de archivo-->
-    <div class="form-group" id="escrib" style="float: left; margin-left:10%;">
+    <div class="form-group" id="escrib" style="width: 40%; float: left; margin-left:10%;">
       <h3>Escoge una foto</h3> <br>
       <div>
-      <img id="fotominiatura" style="width:25%; height: auto; float:left;">
-      <input style="float:left;"type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-      <small id="fileHelp" style="float: left;" class="form-text text-muted">Hola</small><br>
-    </div>
+        <center>
+          <input name="photo" type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"><br>
+          <img id="fotominiatura" style="width:45%; height: auto; ">
+        </center>
+      </div>
     </div>
     <!--Campo de descripción-->
-    <div style="float: right; margin-right:10%;"><h3>  Añade una descripción</h3><br>
+    <div style="width: 30%; float: right; margin-right:10%;"><h3>  Añade una descripción</h3><br>
       <div class="form-group">
-        <textarea class="form-control" id="exampleTextarea" placeholder="Escribe una descripción" style=" margin-right:15%;" rows="2"></textarea>
+        <textarea class="form-control" id="exampleTextarea" placeholder="Escribe una descripción" style=" margin-right:15%;" rows="8"></textarea>
       </div>
     </div>
   </div>
+  <center><button class="btn btn-primary" style="width: 15%; margin-bottom: 3%;">Subir</button></center>
+  </form>
 </div>
+
 <script type="text/javascript" src="{% static 'js/algo.js' %}"></script>
 </body>
